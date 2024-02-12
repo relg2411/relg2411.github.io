@@ -1,0 +1,63 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    --header-bg-color: #606c38;
+    --header-color: #fefae0;
+    --content-bg-color: #f4f4f4;
+}
+
+body{
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
+header {
+    background-color: var(--header-bg-color);
+    color: var(--header-color);
+    padding: px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main{
+    margin: 0 40px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--content-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section#about {
+    background-image: url('images/market-background.jpg');
+    color: #333333;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
